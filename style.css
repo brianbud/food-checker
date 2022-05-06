@@ -1,0 +1,33 @@
+body {
+    text-align: center;
+    font-size: 1.5rem;
+    height: 150vh;
+    background: rgb(25, 163, 21);
+    background: linear-gradient(0deg, rgb(4, 109, 0) 0%, rgb(239, 255, 242) 100%);
+}
+
+h1 {
+    font-size: 3rem;
+}
+
+input {
+    width: 200px;
+}
+
+button {
+    display: block;
+    margin: 20px auto;
+    padding: 20px 40px;
+}
+
+img {
+    max-height: 200px;
+}
+
+h2 {
+    margin-bottom: 0;
+}
+
+table {
+    margin: 20px auto
+}
