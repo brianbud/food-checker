@@ -29,5 +29,12 @@ h2 {
 }
 
 table {
-    margin: 20px auto
+    margin: 20px auto;
+}
+
+table,
+th,
+td {
+    border: 1px solid;
+    background-color: white;
 }
