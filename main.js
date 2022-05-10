@@ -22,3 +22,11 @@ function getFetch() {
         })
         .catch(err => console.log(`error ${err}`));
 }
+
+class ProductInfo {
+    constructor(productData) {
+        this.name = productData.product_name
+        this.ingredients = productData.ingredients
+        this.image = productData.image_url
+    }
+}
