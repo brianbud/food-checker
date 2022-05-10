@@ -14,7 +14,8 @@ function getFetch() {
         .then(data => {
             console.log(data)
             if (data.status === 1) {
-
+                const item = new ProductInfo(data.product)
+                item.showInfo()
             } else if (data.status === 0) {
                 alert(`Product ${inputVal} not found.
                 Please try another.`)
@@ -28,5 +29,10 @@ class ProductInfo {
         this.name = productData.product_name
         this.ingredients = productData.ingredients
         this.image = productData.image_url
+    }
+
+    showInfo() {
+        document.getElementById('product-img').src = this.image
+        document.getElementById('product-name').innerText = this.name
     }
 }
