@@ -36,3 +36,4 @@ class ProductInfo {
         document.getElementById('product-name').innerText = this.name
     }
 }
+
