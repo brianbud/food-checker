@@ -16,6 +16,7 @@ function getFetch() {
             if (data.status === 1) {
                 const item = new ProductInfo(data.product)
                 item.showInfo()
+                item.listIngredients()
             } else if (data.status === 0) {
                 alert(`Product ${inputVal} not found.
                 Please try another.`)
@@ -47,7 +48,9 @@ class ProductInfo {
                 this.ingredients[key].text
             )
             let vegStatus = this.ingredients[key].vegetarian      
-            let newVText = document.createTextNode(vegStatus)      
+            let newVText = document.createTextNode(vegStatus)
+            newICell.appendChild(newIText)
+            newVCell.appendChild(newVText)    
         }
     }
 }
