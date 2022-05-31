@@ -35,5 +35,15 @@ class ProductInfo {
         document.getElementById('product-img').src = this.image
         document.getElementById('product-name').innerText = this.name
     }
+
+    listIngredients(){
+        let tableRef = document.getElementById('ingredient-table')
+
+        for(let key in this.ingredients){
+            let newRow = tableRef.insertRow(-1)
+            let newICell = newRow.insertCell(0)
+            let newVCell = newRow.insertCell(1)
+        }
+    }
 }
 
