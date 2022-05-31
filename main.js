@@ -43,6 +43,11 @@ class ProductInfo {
             let newRow = tableRef.insertRow(-1)
             let newICell = newRow.insertCell(0)
             let newVCell = newRow.insertCell(1)
+            let newIText = document.createTextNode(
+                this.ingredients[key].text
+            )
+            let vegStatus = this.ingredients[key].vegetarian      
+            let newVText = document.createTextNode(vegStatus)      
         }
     }
 }
