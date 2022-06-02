@@ -25,3 +25,11 @@ A classList will be added to any of the key's values and select the appropriate 
 Later on, I would love to improve the style and let users users use the device's camera to scan the barcode instead of manually inputting the info.
 
 ## Lessons Learned:
+
+To use classes for creating objects.
+
+Learnt to work with tables, that there are methods like insertRow(), insertCell() and even deleteRow()
+
+Put for...in Loop in practice which is a better option to use than a for loop since we don't know how many items the object has.
+
+How to use ternary operator instead of using if else statements.
